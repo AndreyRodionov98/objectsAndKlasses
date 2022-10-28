@@ -2,12 +2,11 @@ import java.util.Scanner;
 
 public class Main {
     public static Scanner sc = new Scanner(System.in);
-    public static   Book [] arrayBooks() {
+    public static   Book [] arrayBooks(Book warAndPeace,Book cherryOrchard) {
         Book[] arrayBooks = new Book[5];
-        arrayBooks[0] = warmAndPeace;
-        arrayBooks[1] = cherryOrchard);
-
-        return arrayBooks();
+        arrayBooks[0] = warAndPeace;
+        arrayBooks[1] = cherryOrchard;
+        return arrayBooks;
     }
     public static void addBooks(Book [] arrayBooks){
        String  addBooks;
@@ -34,11 +33,11 @@ public class Main {
         System.out.println("Имя автора =  " + Tolstoy.getAuthorName());
         System.out.println("Фамилия автора = " + Tolstoy.getAuthorLastName());
 
-        Book warmAndPeace = new Book("Война и мир ", Tolstoy, 1886);
-        System.out.println("название книги = " + warmAndPeace.getTitleOfTheBook());
-        System.out.println("год публикации книги  = " + warmAndPeace.getPublisherYear());
-        warmAndPeace.setPublisherYear(1986);
-        System.out.println("новый год публикации книги = " + warmAndPeace.getPublisherYear());
+        Book warAndPeace = new Book("Война и мир ", Tolstoy, 1886);
+        System.out.println("название книги = " + warAndPeace.getTitleOfTheBook());
+        System.out.println("год публикации книги  = " + warAndPeace.getPublisherYear());
+        warAndPeace.setPublisherYear(1986);
+        System.out.println("новый год публикации книги = " + warAndPeace.getPublisherYear());
 
         System.out.println("--------------");
 
